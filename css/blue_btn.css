@@ -1,0 +1,135 @@
+
+/* blue button style */
+
+:root{
+  --neon-blue: #00eeff; 
+}
+
+.blue-btn:hover{
+    color: var(--neon-blue);
+    letter-spacing: .25em;
+    text-shadow: 0px 0px 5px var(--neon-blue);
+    transition-delay: 1ms;
+  
+  }
+  
+  .blue-btn span{
+    position: absolute;
+    display: block;
+    box-shadow: 0px 0px 5px var(--neon-blue);
+    background: var(--neon-blue);
+  }
+  
+  .blue-btn span:nth-child(1){
+    left: 0;
+    top: 0;
+    width: 50.5%;
+    height: 1.5px;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform .5s;
+  }
+  
+  
+  .blue-btn:hover span:nth-child(1){
+    transform: scaleX(1);
+    transform-origin: right;
+  }
+  
+  
+  
+  
+  .blue-btn span:nth-child(2){
+    right: 0;
+    top: 0;
+    width: 50.5%;
+    height: 1.5px;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform .5s;
+  }
+  
+  
+  .blue-btn:hover span:nth-child(2){
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+  
+  
+  
+  .blue-btn span:nth-child(3){
+    right: 0;
+    top: 0;
+    width: 1.5px;
+    height: 100%;
+    transform: scaleY(0);
+    transition: transform .5s;
+    transform-origin: bottom;
+    transition-delay: .4s;
+  }
+  
+  
+  .blue-btn:hover span:nth-child(3){
+    transform: scaleY(1);
+    transform-origin: top;
+  }
+  
+  
+  
+  
+  .blue-btn span:nth-child(4){
+    left: 0;
+    top: 0;
+    width: 1.5px;
+    height: 100%;
+    transform: scaleY(0);
+    transition: transform .5s;
+    transform-origin: bottom;
+    transition-delay: .4s;
+  
+  }
+  
+  
+  .blue-btn:hover span:nth-child(4){
+    transform: scaleY(1);
+    transform-origin: top;
+  }
+  
+  
+  
+  .blue-btn span:nth-child(5){
+    left: 0;
+    bottom: 0;
+    width: 50.5%;
+    height: 1.5px;
+    transform: scaleX(0);
+    transition: transform .5s;
+    transform-origin: right;
+    transition-delay: .8s;
+  }
+  
+  
+  .blue-btn:hover span:nth-child(5){
+    transform: scaleX(1);
+    transform-origin: left;
+  
+  }
+  
+  
+  .blue-btn span:nth-child(6){
+    right: 0;
+    bottom: 0;
+    width: 50.5%;
+    height: 1.5px;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform .5s;
+    transition-delay: .8s;
+  }
+  
+  
+  .blue-btn:hover span:nth-child(6){
+    transform: scaleX(1);
+    transform-origin: right;
+  
+  }
